@@ -1,0 +1,16 @@
+{
+    "name": "empeek-test-app",
+    "version": "1.0.1",
+    "description": "",
+    "scripts": {
+        "build": "webpack --config webpack.config.js"
+    },
+    "devDependencies": {
+        "webpack": "^4.1.1",
+        "webpack-cli": "^2.0.12",
+        "webpack-dev-server": "^3.1.1"
+    },
+    "dependencies": {
+        "angular": "^1.6.9"
+    }
+}

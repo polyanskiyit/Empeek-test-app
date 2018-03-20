@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="defApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bundle.js"></script>
+</head>
+
+<body ng-controller="defCtrl">
+    <div class="col__logo__block">
+        <div class="logo-block__context">
+            <div class="logo-block___title-text">
+                <span>DAIRY APP</span>
+            </div>
+            <div class="logo-block___subtitle-text">
+                <span>Comment with no sence</span>
+            </div>
+        </div>
+    </div>
+    <div class="content__block">
+        <div class="content__items__block">
+            <div class="content__items___title">Items</div>
+            <br>
+            <input type="text" class="new__item__name__input" ng-model="newItemNameInput" placeholder="Type name here...">
+            <input type="button" ng-click="AddNewItem()" value="Add new" class="add__new_item__btn">
+
+            <div class="list-of-items__block">
+                <table ng-repeat="i in listOfItems track by $index">
+                    <tr class="content__item____row">
+                        <td class="table__of_item">
+                            <a href="" ng-click="SelectItemCommets(i)" class="content__item">{{i.itemName}} <span class="count__of___comments"> {{i.comments.length}}</span></a>
+                        </td>
+                        <td class="table__of_item">
+                            <input type="button" ng-click="DeleteItem(i)" value="Delete" class="delete__item__btn">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="content__item____row"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="content__selected-item__block">
+            <div class="content__items___title___comments">
+                Comment #{{selectedItemId}}
+            </div>
+            <br>
+            <div ng-show="listOfItemComments.length == 0">
+                <div>
+                    No items
+                </div>
+                <br>
+            </div>
+            <div ng-repeat="comment in listOfItemComments track by $index">
+                <div ng-show="$index != listOfItemComments.length - 1">
+                    <div class="comment_style__block">
+                        <div class="user__img_of_comment"></div>
+                        <div class="user__text_comment">{{comment}}</div>
+                    </div>
+                </div>
+                <div ng-show="$index == listOfItemComments.length - 1">
+                    <div class="comment_style__block___last">
+                        <div class="user__img_of_comment"></div>
+                        <div class="user__text_comment">{{comment}}</div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="comment_style__block__new-comment">
+                <div class="user__img_of_comment__def"></div>
+                <textarea placeholder="Write comment..." class="user__text_comment" ng-model="newCommentForItem"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
