@@ -111,10 +111,14 @@ body {
     font-weight: bolder;
 }
 .content__item:focus{
-    border-left: 15px solid red;
+    border-left: 10px solid red;
     margin-left: -9%;
     padding-left: 5%;
     z-index: 3;
+    text-decoration: none;
+}
+.content__item:active{
+    text-decoration: none;
 }
 .delete__item__btn {
     width: 100%;
@@ -144,7 +148,7 @@ body {
 .comment_style__block__new-comment{
     display: flex;
     flex-direction: row;
-    margin-top: -8%;
+    margin-top: -5%;
 }
 .user__img_of_comment {
     width: 50px;
@@ -156,7 +160,6 @@ body {
 }
 .user__img_of_comment__def{
     width: 50px;
-    margin-top: 2%;
     min-width: 50px;
     height: 58px;
     min-height: 50px;
@@ -177,4 +180,10 @@ body {
     margin-top: 1.7%;
     margin-right: 0;
     padding-right: 0;
+}
+.user__commetn__text{
+    width: 100%;
+    margin-left: 5%;
+    height: 75px;
+    padding: 2%;
 }

@@ -1,7 +1,7 @@
 {
     "name": "empeek-test-app",
     "version": "1.0.1",
-    "description": "",
+    "description": "--- test ---",
     "scripts": {
         "build": "webpack --config webpack.config.js"
     },

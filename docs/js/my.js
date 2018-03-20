@@ -1,5 +1,5 @@
 var angular = require('angular');
-var app = angular.module("defApp", []);
+var app = angular.module("app", []);
 
 app.controller("defCtrl", ["$scope", function ($scope) {
     let index = 0;

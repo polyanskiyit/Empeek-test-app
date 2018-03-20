@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="defApp">
+<html lang="en" ng-app="app">
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Empeek-test-app</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="bundle.js"></script>
@@ -51,7 +51,7 @@
             <br>
             <div ng-show="listOfItemComments.length == 0">
                 <div>
-                    No items
+                    No comments
                 </div>
                 <br>
             </div>
@@ -72,7 +72,7 @@
             <br>
             <div class="comment_style__block__new-comment">
                 <div class="user__img_of_comment__def"></div>
-                <textarea placeholder="Write comment..." class="user__text_comment" ng-model="newCommentForItem"></textarea>
+                <textarea class="user__commetn__text" placeholder="Write comment..." class="user__text_comment" ng-model="newCommentForItem"></textarea>
             </div>
         </div>
     </div>
