@@ -27,6 +27,7 @@ body {
     float: left;
     display: flex;
     flex-direction: row;
+    margin-top: 2.9%;
 }
 .content__items__block {
     width: 41.9%;
@@ -34,7 +35,6 @@ body {
     border: 1px solid #837b7b;
     padding-top: 0.8%;
     padding-left: 2.2%;
-    margin-top: 2.9%;
     margin-left: 2.6%;
     padding-right: 2.2%;
     background-color: #fff;
@@ -48,7 +48,6 @@ body {
     border: 1px solid gray;
     padding: 2%;
     margin: 0 4%;
-    margin-top: 2.9%;
     margin-left: 1.5%;
     background-color: #fff;
     overflow-y: auto;
@@ -74,7 +73,7 @@ body {
     font-size: 34px;
 }
 .content__items___title___comments{
-    margin-top: -2%;
+    margin-top: 1%;
     margin-left: -1.2%;
     font-size: 34px;
 }
